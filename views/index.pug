@@ -1,0 +1,56 @@
+//- index.pug
+doctype html
+html
+  head
+    title 25th Birthday Party
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul
+            div#logo
+                img.src(src="/static/img/logo.png", alt="")
+                | ANP
+            li #[a(href = '/') Home]
+            li #[a(href = '/') About ]
+            li #[a(href = '/') Services     ]
+            li #[a(href = '/') Class Schedule]
+            li #[a(href = '/') Contact Us]
+    section#introSection 
+            div Welcome to our grand Party 
+            div.small Party all Night
+    section#missionSection 
+            h1 Our Mission
+            div.card 
+                h3 Enjoy as much as you can
+                div.card-box 
+                        div.card-img
+                                img(src="/static/img/4.jpg", alt="")
+                        div.card-content
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste earum ad praesentium laudantium, animi nesciunt perferendis velit libero ex!
+            div.card 
+                h3 Party all Night
+                div.card-box 
+                        div.card-img
+                                img(src="/static/img/5.jpg", alt="")
+                        div.card-content
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste earum ad praesentium laudantium, animi nesciunt perferendis velit libero ex!
+            div.card 
+                h3 Unlimited champaign and russians
+                div.card-box 
+                        div.card-img
+                                img(src="/static/img/6.jpg", alt="")
+                        div.card-content
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste earum ad praesentium laudantium, animi nesciunt perferendis velit libero ex!
+            
+    section#SponsorsSection 
+            h2 Our Sponsors
+            div#sponsors
+                img(src="/static/img/chess.jpg" alt="chess" class="sponsorsImg")
+                img(src="/static/img/tesla.jpg" alt="Tesla" class="sponsorsImg")
+                img(src="/static/img/micro.jpg" alt="microsoft" class="sponsorsImg")
+                img(src="/static/img/google.jpg" alt="google" class="sponsorsImg")
+                
+
+    footer#footer
+        | Copyright © 2023  partyallnight.in | All Rights Reserved
